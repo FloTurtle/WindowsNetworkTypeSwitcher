@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WindowsNetworkTypeSwitcher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Network type switcher" Height="350" Width="525">
     <Grid>
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="6,0,0,6" TextWrapping="Wrap" Text="WindowsNetworkTypeSwitcher by ***REMOVED***" VerticalAlignment="Bottom" FontSize="10"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Networks:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_GitHub" HorizontalAlignment="Left" Margin="202,0,0,6" TextWrapping="Wrap" FontSize="10" VerticalAlignment="Bottom">
+            <Hyperlink NavigateUri="https://github.com/***REMOVED***/WindowsNetworkTypeSwitcher" RequestNavigate="Hyperlink_RequestNavigate">
+                Source Code
+            </Hyperlink>
+        </TextBlock>
+        <ListBox x:Name="listBox_networks" Margin="10,31,10,24"/>
+
     </Grid>
 </Window>
