@@ -46,7 +46,7 @@ namespace WindowsNetworkTypeSwitcher
                 string[] RegistryNetworks = NetworkRegistryList.GetSubKeyNames();
                 foreach (string RegistryNetwork in RegistryNetworks)
                 {
-                    NetworkPanel NetworkPanelitem = new NetworkPanel(RegistryNetwork);
+                    NetworkPanel NetworkPanelitem = new NetworkPanel(hklm.OpenSubKey(@"SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles\" + RegistryNetwork,true));
                     listBox_networks.Items.Add(NetworkPanelitem);
                 }
             }

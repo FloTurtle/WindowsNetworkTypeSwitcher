@@ -5,9 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WindowsNetworkTypeSwitcher"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Height="100">
-        <TextBlock x:Name="textBlock_Network_name" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Network name" VerticalAlignment="Top"/>
+             d:DesignHeight="45" d:DesignWidth="450">
+    <Grid Height="45" Width="450">
+        <TextBlock x:Name="textBlock_Network_name" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Network name" VerticalAlignment="Top" FontSize="13"/>
+        <Button x:Name="button_private" Content="Set to private" VerticalAlignment="Center" FontSize="10" HorizontalAlignment="Center" Margin="0,22,0,6" Width="125" Click="button_private_Click" IsEnabled="False"/>
+        <Button x:Name="button_public" Content="Set to public" VerticalAlignment="Center" FontSize="10" Margin="10,22,0,6" HorizontalAlignment="Left" Width="125" Click="button_public_Click" IsEnabled="False"/>
+        <Button x:Name="button_domain" Content="Set to domain" VerticalAlignment="Center" FontSize="10" HorizontalAlignment="Right" Margin="0,22,10,6" Width="125" Click="button_domain_Click" IsEnabled="False"/>
 
     </Grid>
 </UserControl>
