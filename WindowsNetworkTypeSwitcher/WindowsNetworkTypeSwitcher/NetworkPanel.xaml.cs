@@ -17,9 +17,6 @@ using Microsoft.Win32;
 
 namespace WindowsNetworkTypeSwitcher
 {
-    /// <summary>
-    /// Interaktionslogik für NetworkPanel.xaml
-    /// </summary>
     public partial class NetworkPanel : UserControl
     {
         private RegistryKey registryNetworkkey;
